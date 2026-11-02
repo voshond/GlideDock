@@ -120,6 +120,10 @@ gnome-extensions disable glidedock@bquangthien25.github.io
 gnome-extensions uninstall glidedock@bquangthien25.github.io
 ```
 
+## Develop
+
+`tools/dev-install.sh` installs a build that reloads itself. Log out and back in once to load it. After that, saving a file in `lib/` or `stylesheet.css` replaces the running dock, and a file that fails to load leaves it untouched. Changes to `prefs.js`, the schemas or `metadata.json` need the script again, and `./build.sh --install` puts the normal build back.
+
 ## Bugs
 
 Report them at <https://github.com/bquangthien25-hub/GlideDock/issues> with your GNOME Shell version and the output of `journalctl --user -b -g glidedock`.
